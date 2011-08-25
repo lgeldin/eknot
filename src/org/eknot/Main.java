@@ -1,4 +1,5 @@
 package org.eknot;
+
 import org.eknot.communication.Server;
 import org.eknot.communication.ServerPing;
 import org.eknot.lookup.NoIPServerProvider;
@@ -24,8 +25,7 @@ public class Main {
 			if (ping.ping(server)) {
 				System.out.println(server.getIpAddress() + ":-)");
 				found = true;
-			}
- else {
+			} else {
 				System.out.println(server.getIpAddress() + ":-(");
 			}
 		}
