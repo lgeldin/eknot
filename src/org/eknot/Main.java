@@ -1,3 +1,4 @@
+package org.eknot;
 import org.eknot.communication.Server;
 import org.eknot.communication.ServerPing;
 import org.eknot.lookup.NoIPServerProvider;
