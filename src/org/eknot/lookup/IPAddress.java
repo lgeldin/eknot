@@ -1,5 +1,8 @@
 package org.eknot.lookup;
 
+
+@Deprecated
+//TODO use well known class - java.net.InetAddress or smth else 
 public class IPAddress {
 	private String ip;
 

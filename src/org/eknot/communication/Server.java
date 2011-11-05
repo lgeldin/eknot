@@ -1,8 +1,9 @@
 package org.eknot.communication;
 
-public class Server {
-	public void start() {
-		// TODO: Artiom
-		// listen to relevant ports
-	}
+import org.eknot.lookup.ServerInfo;
+
+public interface Server {
+	
+	public boolean ping(ServerInfo destination);
+
 }

@@ -8,16 +8,7 @@ import java.util.List;
 public class NoIPServerProvider implements ServerListProvider {
 
 	public IPAddress getIP(int hostNumber) {
-
-		try {
-			InetAddress address = InetAddress.getByName("eknot-host"
-					+ hostNumber + ".no-ip.org");
-			return new IPAddress(address.getHostAddress());
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-			return null;
-		}
-
+		return new IPAddress("eknot-host" + hostNumber + ".no-ip.org");
 	}
 
 	@Override
